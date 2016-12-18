@@ -15,9 +15,9 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.save!
-
+      redirect_to @message
     else
-
+      render :new
     end
   end
 
