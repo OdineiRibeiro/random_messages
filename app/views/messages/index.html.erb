@@ -1,5 +1,7 @@
-<%= @message.id %><br>
-<%= @message.title %><br>
-<%= @message.text %><br>
+<% @messages.each do |message| %>
+  <%= message.id %><br>
+  <%= message.title %><br>
+  <%= message.text %><br><br>
+<% end %>
 
-<a href="/">Gimme anotha message!</a>
+<a href="/">Back to random messages!</a>
